@@ -1,0 +1,60 @@
+#define _CRT_SECURE_NO_WARNING 1
+
+//std-标准 standard input output
+#include <stdio.h>
+
+//int是整型的意思
+//main前面的int表示main函数调用之后返回一个整型值
+//void main 表示无返回值
+int main() //主函数:函数的入口，main函数有且仅有一个
+{
+	//这里完成任务
+	//printf-打印函数
+	//库函数：C语言本身提供给我们使用的函数 
+	//使用之前   #include
+	printf("hello world\n");
+	printf("hello world\n");
+	printf("hello world\n");
+	printf("hello world\n");
+
+
+	//%d - 打印整型
+	//%c - 打印字符
+	//%f - 打印浮点数字 - 打印小数
+	//%p - 以地址的形式打印
+	//%x - 打印16进制数字
+	//%o 。。。。
+
+	//char:字符类型
+	char ch = 'A';//内存（）向内存申请一块空间名叫ch，赋值为A
+	printf("%c\n", ch);//%c：打印字符格式的数据
+
+	//short int：短整型
+	//int：整型
+	int age = 20.0;
+	printf("%d\n", age);//%d: 打印整型十进制数据
+	
+	//long:长整型
+	long num = 100;
+	printf("%d\n", num);
+
+	//float:单精度浮点型
+	float f = 5.0;
+	printf("%f\n", f);
+
+	//double：双精度浮点型
+	double d = 3.14;
+	printf("%lf\n", d);
+
+	printf("%d\n", sizeof(char));//对于size可专门用%zd
+	printf("%d\n", sizeof(short));
+	printf("%d\n", sizeof(int));
+	printf("%d\n", sizeof(long));
+	printf("%d\n", sizeof(long long));
+	printf("%d\n", sizeof(float));
+	printf("%d\n", sizeof(double));
+	//此处输出的数字为字节，一字节为8个比特位
+
+	
+	return 0;//返回
+}
